@@ -1,0 +1,187 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("images/all_nba.jpg");
+}
+
+h1{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    background:rgba(255, 0, 0, 0.836);
+}
+
+.page-header{
+    background: red;
+    opacity: 70%;
+}
+#add-div{
+    display:flex;
+}
+#add-player-btn{
+    padding: 15px;
+    justify-content: center;
+    height:65px;
+    width:40%;
+    margin: 0 auto;
+    background:red;
+    color:white;
+    font-size: 32px;
+    border-color: white;
+    border-width: 5px;
+}
+#add-player-btn:hover{
+    background:blue;
+}
+
+input{
+    margin: 10px 0px 0px 0px;
+}
+#add-form-div{
+    display:flex;
+    justify-content: center;
+}
+
+.add-player-form{
+    display:none;
+    justify-content: center;
+    
+}
+#add-player-form a{
+    color:white;
+    text-decoration: none;
+}
+#add-player-form{
+    background:red;
+    padding:15px;
+    width:30%;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    text-align:center;
+    color:white;
+}
+#edit-form-div{
+    display:flex;
+    justify-content: center;
+}
+input{
+    border-color: blue;
+    padding: 5px;
+}
+textarea{
+    border-color:blue;
+    padding:5px;
+}
+.edit-player-form{
+    display:none;
+    justify-content: center;
+}
+#edit-player-form{
+    background: red;
+    padding: 40px;
+    color:white;
+}
+.player-header{
+    vertical-align: center;
+}
+.players-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.player-div{
+    display:inline-block;
+    justify-content: center;
+    display:flex;
+}
+
+.player-content-div{
+    justify-content: center;
+    padding:20px;
+    flex:70%;
+}
+.buttons-div{
+    flex:20%;
+    justify-content: center;
+}
+
+.edit-btn{
+    border-radius: 60%;
+    border-color:white;
+    border-width: 4px;
+    background: rgb(207,83,0);
+    font-weight: bolder;
+    padding:10px;
+    display:none;
+    margin: 0px 0px 10px 0px;
+}
+
+.delete-btn{
+    border-radius: 60%;
+    border-color:white;
+    border-width: 4px;
+    background: rgb(207,83,0);
+    font-weight: bolder;
+    padding:10px;
+    display:none;
+    margin: 0px 0px 10px 0px;
+}
+ #btn-adding-player{
+     padding:10px;
+     border-color:white;
+     background:blue;
+     color:white;
+ }
+ #btn-editing-player{
+    padding:10px;
+    border-color:white;
+    background:blue;
+    color:white;
+}
+.hidden{
+    display:none;
+}
+
+.player {
+    background: white;
+    color:black;
+    padding:10px;
+    margin: 10px;
+    width:40%;
+    justify-content: space-between;
+}
+
+.player:hover {
+    background:black;
+    color:white;
+}
+
+.player:hover .edit-btn{
+    display:flex;
+}
+
+.player:hover .delete-btn{
+    display:flex;
+}
+
+
+@media all and (max-width:600px){
+    .player-div{
+        flex-direction: column;
+        width: 50%;
+    }
+    .buttons-div{
+        justify-content: center;
+    }
+    #add-player-form{
+        width:50%;
+    }
+    #add-player-btn{
+        height: 100%;
+    }
+}

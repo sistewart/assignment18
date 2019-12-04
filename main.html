@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel= "stylesheet" href="styles.css">
+        <script src = "script.js"></script>
+    </head>
+    <body>
+        
+        <h1 id="page-header">NBA Players List</h1>
+        <div id= "add-div">
+        <button id="add-player-btn">Add Your Favorite NBA Player</button>
+        </div>
+        <div id="add-form-div">
+        <div id ="add-player-form" class = "hidden">
+                <h2>Add a New NBA Player</h2>
+                <p><label>Name:</label><input id="add-player-name"></p>
+                <p><label>Age:</label><input id="add-player-age"></p>
+                <p><label>Hometown:</label><input id="add-player-hometown"></p>
+                <p><label>Former Teams:</label><textarea rows="6" id="add-player-former"></textarea></p>
+                <p><label>Current Team:</label><input id="add-player-current"></p>
+                <p><label>Years in the NBA:</label><input id="add-player-years"></p>
+                <button id="btn-adding-player"><a href="?">Add the NBA Player</a></button>
+        </div>
+        </div>
+
+        <div id ="players-home"></div>
+        
+        <div id= "edit-form-div">
+        <div id ="edit-player-form" class="hidden">
+            <h2>Edit a NBA Player</h2>
+            <p><label>Name:</label><input id="edit-player-name"></p>
+            <p><label>Age:</label><input id="edit-player-age"></p>
+            <p><label>Hometown:</label><input id="edit-player-hometown"></p>
+            <p><label>Former Teams:</label><textarea rows="6" id="edit-player-former"></textarea></p>
+            <p><label>Current Team:</label><input id="edit-player-current"></p>
+            <p><label>Years in the NBA:</label><input id="edit-player-years"></p>
+            <button id="btn-editing-player">Edit the NBA Player</button>
+
+            <span id="edit-player-id" class="hidden"></span>
+        </div>
+        </div>  
+
+    </body>
+</html>
